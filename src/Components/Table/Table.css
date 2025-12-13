@@ -1,0 +1,15 @@
+.table{
+    border: 1px solid black;
+}
+.data{
+    background-color: rgb(227, 223, 223);
+    padding: 10px;
+    font-size: 20px;
+}
+.heading{
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+  
+}

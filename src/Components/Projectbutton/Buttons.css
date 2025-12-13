@@ -1,0 +1,24 @@
+.primary-btn{
+background: linear-gradient(94.36deg, #FD6F00 3.1%, #E46400 94.54%);
+color: #FFFFFF;
+font-size: 18px;
+padding: 10px 30px 10px 30px;
+border: none;
+border-radius:8px ;
+display: flex;
+text-align: center;
+justify-content: center;
+gap:15px;
+
+/* width: 100%; */
+}
+.secondary-btn {
+    padding: 7px 25px 7px 25px;
+    color: #959595;
+    border: 2px solid #959595;
+    font-size: 20px;
+    /* font-weight: bold; */
+    border-radius: 8px;
+    background-color: black;
+
+}

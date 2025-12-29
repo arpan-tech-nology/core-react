@@ -3,7 +3,7 @@ import { PortfolioCard } from "../Cards/Cards"
 export default function Profile() {
     return (
         <>
-            <div className="portfolio-wrap">
+            <div className="portfolio-wrap container-width">
                 <div className="portfolio-container">
                     <div className="center">
                         <p className="service-text">Portfolio</p>

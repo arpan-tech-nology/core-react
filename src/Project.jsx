@@ -1,3 +1,4 @@
+import "./App.css"
 import ProjectHeader from "./Components/ProjectHeader/Header"
 import HeroSection from "./Components/Herosection/Herosection"
 import Service from "./Components/Srevice/Service"

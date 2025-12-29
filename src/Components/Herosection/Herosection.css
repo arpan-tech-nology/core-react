@@ -1,13 +1,13 @@
-.herosection-wraper {
+/* .herosection-wraper {
     width: 100%;
     display: flex;
     justify-content: center;
-    /* padding: 20px; */
+   
 
-}
+} */
 
 .hero-section {
-    width: 90%;
+    /* width: 90%; */
     display: flex;
     padding-bottom: 20px;
     padding-top: 25px;
@@ -21,7 +21,7 @@
 }
 
 .hero-left-section .hero-text {
-    color: #707070;
+    color: var(--secondary-text-color);
     font-size: 20px;
     margin: 0%;
     padding-bottom: 5px;
@@ -40,7 +40,7 @@
     margin: 0%;
     font-weight: 500;
     padding: 10px 0px 10px 0px;
-    color: #FD6F00;
+    color: var(--primary-color);
 }
 
 .social-logo {
@@ -83,7 +83,7 @@
 }
 
 .hero-section .number {
-    color: #FD6F00;
+    color: var(--primary-color);
     font-size: 24px;
     font-weight: bold;
     margin: 0px;
@@ -259,7 +259,7 @@
 
 @media screen and (max-width:765px) {
     .hero-section-right-container {
-        width: 71%;
+        width: 95%;
     }
 
 }

@@ -5,7 +5,7 @@ import Skill from "../Skill/Skill"
 export default function AboutMe() {
     return (
         <>
-            <div className="about-container">
+            <div className="about-container container-width">
                 <div className="aboutme-section">
                     <div className="center">
                         <p className="service-text">About Me</p>

@@ -1,11 +1,11 @@
-.service-wrapper {
+/* .service-wrapper {
     width: 100%;
     display: flex;
     justify-content: center;
-}
+} */
 
 .service {
-    width: 90%;
+    width: var(--page-width);
     padding-top: 100px;
 }
 
@@ -16,7 +16,7 @@
 }
 
 .service-text-color {
-    color: #707070;
+    color: var(--secondary-text-color);
     font-size: 20px;
 
 }

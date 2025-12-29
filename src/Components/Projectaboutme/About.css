@@ -1,12 +1,12 @@
-.about-container {
+/* .about-container {
     width: 100%;
     display: flex;
     justify-content: center;
 
-}
+} */
 
 .aboutme-section {
-    width: 90%;
+    width: var(--page-width);
     padding-top: 100px;
     /* padding: 50px 0px 50px 0px; */
 }
@@ -88,7 +88,7 @@
 }
 
 .right-section .paragraph {
-    color: #959595;
+    color: var(--primary-text-color);
     font-size: 20px;
     /* padding-top: 80px; */
     margin: 0%;
@@ -134,7 +134,7 @@
     height: 70px;
     border-radius: 50%;
     /* color: white; */
-    border: 10px solid #FD6F00;
+    border: 10px solid var(--primary-color);
     display: flex;
     align-items: center;
     /* text-align: center; */
@@ -159,14 +159,14 @@
 }
 
 .persantage {
-    color: #FD6F00;
+    color: var(--primary-color);
     padding: 10px 0px 10px 0px;
     font-weight: 600;
     font-size: 20px;
 }
 
 .persentage-text {
-    color: #959595;
+    color: var(--primary-text-color);
     font-size: 20px;
     font-weight: 500;
 
@@ -232,7 +232,7 @@
     .right-section .paragraph {
         line-height: 1.9;
         font-size: 20px;
-        padding-top: 0%;
+        padding-top: 25px;
 
     }
 

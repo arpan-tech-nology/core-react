@@ -1,18 +1,41 @@
 import "./Header.css"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { PrimaryButton } from "../Projectbutton/Buttons"
 export default function ProjectHeader() {
-    const [sidebarOpen ,setSideBarOpen]=useState(false); 
-    function sidebar(){
-        console.log("click");
+    // const [showHeader ,setShowHeader]=useState(false);
+    const [showHeader, setShowHeader] = useState(false);
+    // const [lastScrollY, setLastScrollY] = useState(0);                         
+    
+  
+    useEffect(() => {
 
 
+    window.addEventListener("scroll",() => {
+      const currentScrollY = window.scrollY;
+      if(currentScrollY ==0 ){
+      setShowHeader(false)
+        }
+
+      if (currentScrollY > 900) {
+          
+          setShowHeader(true);
+
+       
+      }
+     
     }
+   );
+  
+  }, []);
+
+    
+      
+    
     return (
         <>
-            <div className="nav-bar-container">
-                <nav className="nav-bar">
-                    <div className="toogler" onClick={sidebar}>
+            <div className={`nav-bar-container container-width ${showHeader ? "show" : ""}`} >
+                <nav className="nav-bar container-width-wrap">
+                    <div className="toogler" >
                         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M14 12H3" stroke="#959595" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                             <path d="M21 6H3" stroke="#959595" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -20,8 +43,6 @@ export default function ProjectHeader() {
                         </svg>
 
                     </div>
-
-                    
                     <div className="logo">
                         <img src="./LOGO.png"></img>
                     </div>

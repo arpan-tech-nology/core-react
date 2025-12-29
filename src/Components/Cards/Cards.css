@@ -1,5 +1,5 @@
 .card-heading {
-    color: #FD6F00;
+    color: var(--primary-color);
     font-size: 24px;
     /* font-weight: 700; */
 
@@ -47,7 +47,7 @@
     /* height   ; */
 }
 .card-text-color{
-    color:  #959595;
+    color:  var(--primary-text-color);
 
 }
 .card-img{

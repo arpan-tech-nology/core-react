@@ -3,8 +3,8 @@ import { PrimaryButton, SecondaryButton } from "../Projectbutton/Buttons"
 export default function HeroSection() {
     return (
         <>
-            <div className="herosection-wraper">
-                <div className="hero-section">
+            <div className="herosection-wraper container-width">
+                <div className="hero-section container-width-wrap">
                     <div className="hero-left-section">
                         <p className="hero-text">Hi I am</p>
                         <p className="hero-section-heading">Mahmood Fazil</p>

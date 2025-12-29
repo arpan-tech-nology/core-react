@@ -4,8 +4,8 @@ import { ServiceCard } from "../Cards/Cards"
 export default function Service() {
     return (
         <>
-            <div className="service-wrapper">
-                <div className="service">
+            <div className="service-wrapper container-width">
+                <div className="service ">
 
                     <div className="center">
                         <p className="service-text">Services</p>

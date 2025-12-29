@@ -1,10 +1,10 @@
-.contact-wrap{
+/* .contact-wrap{
     width: 100%;
     display: flex;
     justify-content: center;
-}
+} */
 .contact-container{
-    width: 90%;
+    width: var(--page-width);
     padding-bottom: 100px;
 }
 .form-row{
@@ -15,8 +15,20 @@
     /* justify-content: space-around; */
     /* padding: 20px; */
 }
-
-.form-row .input ,.text-area{
+.datatext{
+    color: rgb(101, 202, 101);
+    font-size: 18px;
+    margin: 0px;
+    padding-right: 10px;
+}
+.dataSucess{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: fit-content;
+}
+.form-row .input ,.text-area,.input1{
     width: 95%;
     padding: 15px;
     background-color: #282626;
@@ -24,8 +36,12 @@
     outline: none;
     border-radius: 5px;
     height: fit-content;
+    color: var(--secondary-text-color);
  
     /* height: 150px; */
+}
+.input1{
+    width: 100%;
 }
 .text-area{
     height: 120px;
@@ -44,7 +60,19 @@
     /* width: 80%; */
     display: flex;
     justify-content: end;
+    /* width: 100%; */
+    /* height: fit-content; */
     padding: 20px 0px 20px 0px;
+}
+.input-wrap{
+    display: flex;
+    flex-direction: column;
+}
+.input-text{
+    padding: 10px;
+    font-size: 14px;
+    padding-bottom: 0px;
+    color: rgb(199, 73, 73);
 }
 /* .input-with-arrow {
   width: 100%;
@@ -58,11 +86,16 @@ border: 1px solid #ccc;
 border-radius: 6px;
 } */
 .input-with-arrow {
-  padding-right: 35px;
+    
+width: 100%;
+    /* padding-right: 35px; */
+    /* padding-right: 10px; */
+
+  /* padding-right: 35px;
   background-repeat: no-repeat;
   background-position: right 10px center;
   background-size: 20px;
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'><path d='M19 8.5L12 15.5L5 8.5' stroke='%23959595' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'><path d='M19 8.5L12 15.5L5 8.5' stroke='%23959595' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/></svg>"); */
 }
 
 @media screen and (max-width:1117px){

@@ -2,7 +2,7 @@ import "./Footer.css"
 export default function Footer() {
     return (
         <>
-            <div className="footer-Wrapper">
+            <div className="footer-Wrapper container-width">
                 <div className="footer">
                     <div className="center">
                         <img src="./LOGO.Png"></img>

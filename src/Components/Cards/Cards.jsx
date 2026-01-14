@@ -18,8 +18,6 @@ function PortfolioCard({image,title,category}){
         <>
         <div className="card-1">
             <div className="card-header">
-
-              {/* <img src={image} alt={label} width={45} height={45} /> */}
               <img className="card-img" src={image}></img>
             </div>
             <div className="card-footer ">

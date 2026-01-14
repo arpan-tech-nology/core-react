@@ -3,7 +3,7 @@ import { PrimaryButton, SecondaryButton } from "../Projectbutton/Buttons"
 export default function HeroSection() {
     return (
         <>
-            <div className="herosection-wraper container-width">
+            <div id="home" className="herosection-wraper container-width">
                 <div className="hero-section container-width-wrap">
                     <div className="hero-left-section">
                         <p className="hero-text">Hi I am</p>
@@ -33,11 +33,8 @@ export default function HeroSection() {
 
                         </div>
                         <div className="hero-section-btn">
-                            {/* <button className="primary-btn">Hire Me</button> */}
                             <PrimaryButton label={"Hire Me"} />
                             <SecondaryButton label={"Download Cv"} />
-
-                            {/* <button className="secondary-btn">Download CV</button> */}
                         </div>
                         <div className="experience-wrap">
                             <div className="experience">
@@ -59,14 +56,7 @@ export default function HeroSection() {
 
                         </div>
                     </div>
-                    {/* 
                     <div className="hero-section-right-container">
-                        <div className="circle">
-                        <img className="image" src="./man.png"></img>
-                        </div>
-                    </div> */}
-                    <div className="hero-section-right-container">
-                        {/* <div class="circle"></div> */}
                         <img src="./man.png" className="image" />
                     </div>
 

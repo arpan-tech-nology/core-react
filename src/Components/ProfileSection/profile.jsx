@@ -2,7 +2,7 @@ import "./profile.css"
 export default function Profile() {
     return (
         <>
-            <div className="profile-container">
+            <div  className="profile-container">
                 <div className="profile-section">
                     <div className="information">
                         <h1 className="heading">Your Name Here</h1>

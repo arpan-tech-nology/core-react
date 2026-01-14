@@ -3,7 +3,13 @@ import "./Buttons.css"
 function PrimaryButton({label ,icon ,...rest}){
     return(
         <>
-        <button className="primary-btn" {...rest}>{icon?icon:""}{label}</button>
+        <button className="primary-btn" {...rest}>
+            <div className="animation">
+                <span className="effect">{label}{icon?icon:""}</span>
+                <span className="effect">{label}{icon?icon:""}</span>
+
+            </div>
+        </button>
         </>
     )
 
@@ -12,7 +18,13 @@ function PrimaryButton({label ,icon ,...rest}){
 function SecondaryButton({label,...rest}){
     return(
         <>
-     <button className="secondary-btn" {...rest}>{label}</button>
+     <button className="secondary-btn" {...rest}>
+         <div className="animation">
+                <span className="effect">{label}</span>
+                <span className="effect">{label}</span>
+
+            </div>
+     </button>
         </>
     )
 }

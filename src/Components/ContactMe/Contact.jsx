@@ -1,13 +1,14 @@
 import "./Contact.css"
 import { SecondaryButton, PrimaryButton } from "../Projectbutton/Buttons"
+import {CircleCheck } from "lucide-react";
 import { useEffect, useState } from "react"
+import { CheckCheck } from "lucide-react";
 export default function ContactMe() {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [phoneNumber, setPhoneNumber] = useState("");
     const [timeline, setTimeLine] = useState("");
     const [projectDetail, setProjectDetail] = useState("");
-    // const [service ,setService]=useState("");
     const [nameError, setNmaeError] = useState(false);
     const [emailError, setEmailError] = useState(false);
     const [phoneNumberError ,setPhoneNumberError]=useState(false);
@@ -18,7 +19,6 @@ export default function ContactMe() {
     const [emailValidation, setEmailValidation] = useState(false);
     const [phoneNumberValidation , setPhoneNumberValidation]=useState(false);
 
-    // console.log(name)
 
     function ResetButton() {
         if (name && !emailValidation ) {
@@ -37,27 +37,21 @@ export default function ContactMe() {
     }
     function EmailValidate() {
         const emailLower = email.toLocaleLowerCase();
-        // for(let i=0;i>emailLower.length;i++){
-        //     if(emailLower[i]==" "){
-        //         setEmailValidation(false);
-        //     }
-        // }
-        // console.log(emailLower)
+
         if(emailLower.length<0){
-            // setEmailValidation(true);
-            // setEmailError(true)
+
             console.log("no")
         }
         if (emailLower.length>0 && emailLower.includes("@") ) {
-            // setEmailValidation(true)
+            
             const splitAt = email.split("@");
             console.log(splitAt)
             if (splitAt[1].includes(".")) {
-                // setEmailValidation(true)
+                
                 const slpitDot = splitAt[1].split(".");
                 console.log(slpitDot)
                 if (slpitDot[0].length > 0 && slpitDot[1].length > 0 ) {
-                    // console.log(email);
+                
                     setEmailValidation(false);
                 }
             }
@@ -71,9 +65,9 @@ export default function ContactMe() {
             }
             console.log("invalid")
         }
-        // console.log(email.split(" ").includes("A"))
+       
     }
-    //  EmailValidate()
+
 
     function validatePhoneNumber(){
         const number=phoneNumber.split("");
@@ -98,13 +92,12 @@ export default function ContactMe() {
         event.preventDefault();
         if (!name) {
             setNmaeError(true)
-            // setSending(false)
+            
         }
 
         if (!email) {
             setEmailError(true)
-            // setEmailValidation(false)
-            // setSending(false)
+    
         }
         
         if(!phoneNumber){
@@ -118,18 +111,13 @@ export default function ContactMe() {
         if(!timeline){
             setTimeLineError(true)
         }
-        // if(email){
-        //     EmailValidate()
-        // }
+      
         if (name && !emailValidation && email && phoneNumber && timeline && projectDetail ) {
           
          setSending(true)
             
         }
-        // setNmaeError(false)
-        // setEmailError(false)
-
-        // console.log("yes")
+       
         const data = {
             first_name: name,
             email: email,
@@ -146,17 +134,15 @@ export default function ContactMe() {
            
 
 
-        }, 3000)
+        }, 10000)
     }
     useEffect(()=>{
-        // setEmailValidation(false)
         
         EmailValidate();
         setEmailError(false);
-        // setNmaeError(false);
+      
     },[email])
       useEffect(()=>{
-        // EmailValidate();
         setNmaeError(false);
     },[name])
 
@@ -175,7 +161,7 @@ useEffect(()=>{
 
     return (
         <>
-            <div className="contact-wrap container-width">
+            <div id="contactme" className="contact-wrap container-width">
                 <div className="contact-container">
                     <div className="center">
                         <p className="service-text">Contact Me</p>
@@ -211,9 +197,9 @@ useEffect(()=>{
                                     }
 
                                 </div>
-                                <div className="input-wrap">
+                                <div className="input-wrap input  ">
 
-                                <select className="input1 input-with-arrow"  placeholder="Service Of Interest">
+                                <select className="input1"  placeholder="Service Of Interest">
                                     <option>
                                         Service Of Interest
                                     </option>
@@ -221,14 +207,6 @@ useEffect(()=>{
                                         option2</option></select>
                                 </div>
 
-
-                                             
-                                {/* <div class="wrapper">
-                                    <input className="input" placeholder="Phone Number"/>
-                                    <span class="icon"> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M19 8.5L12 15.5L5 8.5" stroke="#959595" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-</svg> </span>
-                                </div> */}
                                 <div className="input-wrap">
                                 <input className="input" placeholder="Timeline" type="text" value={timeline} onInput={(e) => { setTimeLine(e.target.value) }}></input>
                                  {timelineError ? <div className="input-text">Timeline is Required</div> : ""}
@@ -243,12 +221,11 @@ useEffect(()=>{
                                     </div>
                             </div>
                             <div className="form-btn"   >
-                                {/* <button className="secondary-btn">Send</button> */}
 
                                 {
                                     sending ?
                                         <div className="dataSucess">
-                                            <p className="datatext">Data Has Been Send Sucessfully! </p>
+                                            <p className="datatext">Data Has Been Send Sucessfully! <CircleCheck color="green"></CircleCheck> </p>
                                             <PrimaryButton label={"sending.."} onClick={PreventDefault}></PrimaryButton>
                                         </div>
                                         :

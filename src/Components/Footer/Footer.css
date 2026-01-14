@@ -1,17 +1,12 @@
 
 .footer-Wrapper {
-    /* width: 100%;
-    display: flex;
-    justify-content: center; */
     background-color: #282626;
-    /* background-color: black; */
     padding: 50px 0px 50px 0px;
 
 }
 
 .footer {
     width: var(--page-width);
-    /* background-color: aliceblue; */
 }
 
 .footer-list {
@@ -20,24 +15,21 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
-
-
-    /* align-items: center; */
     text-align: center;
     padding: 0px;
 }
 
-.footer-list-wrapper {
-    /* padding: 20px;
-    width: 50%; */
-    /* display: flex;
-    justify-content: space-between; */
-
-}
 
 .footer-list .list-item {
-    /* padding: 20px; */
+ 
     font-size: 20px;
+}
+.footer-list .list-item-link{
+    color:  var(--primary-text-color);
+    text-decoration: none;
+}
+.footer-list .list-item-link:hover{
+    color: var(--primary-color);
 }
 
 .personal-information {
@@ -47,9 +39,16 @@
     gap: 10px;
     color:  var(--primary-text-color);
     font-size: 20px;
+    cursor: pointer;
     margin-top: 0%;
-    /* justify-content: space-between; */
+ 
 }
+.personal-information:hover svg{
+    fill:  rgb(22, 75, 22);
+
+
+}
+
 
 .personal-information-container {
     display: flex;
@@ -57,11 +56,10 @@
     flex-wrap: wrap;
     gap: 20px;
       border-bottom: 1px solid #707070;
-    /* width: 35%; */
+  
 }
 .website-info{
-    /* width: 35%; */
-   /* border-top: 1px solid #707070; */
+   
    display: flex;
    justify-content: center;
    color: var(--secondary-text-color);

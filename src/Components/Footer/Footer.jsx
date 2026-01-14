@@ -9,11 +9,13 @@ export default function Footer() {
 
                         <div className="footer-list-wrapper">
                             <ul className="footer-list">
-                                <li className="list-item">Home</li>
-                                <li className="list-item">Services</li>
-                                <li className="list-item">About me</li>
-                                <li className="list-item">Portfolio</li>
-                                <li className="list-item">Contact me</li>
+                                <li className="list-item"><a href="#home" className= "list-item-link">Home</a></li>
+                                <li className="list-item"><a href="#service" className= "list-item-link">Services</a></li>
+                                <li className="list-item"><a href="#aboutme" className= "list-item-link">About me</a></li>
+                                <li className="list-item"><a href="#portfolio" className= "list-item-link">Portfolio</a></li>
+                                <li className="list-item"><a href="#contactme" className= "list-item-link">Contact me</a></li>
+
+                               
                             </ul>
                         </div>
                         <div className="social-logos">

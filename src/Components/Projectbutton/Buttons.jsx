@@ -22,7 +22,6 @@ function SecondaryButton({label,...rest}){
          <div className="animation">
                 <span className="effect">{label}</span>
                 <span className="effect">{label}</span>
-
             </div>
      </button>
         </>

@@ -1,0 +1,45 @@
+.box{
+    /* margin: 20px; */
+    height: 500px;
+    width: 500px;
+    border-radius: 10px;
+    display: flex;
+    border: 5px solid black;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    overflow: hidden;
+
+
+}
+.animation1,.animation2{
+    display: flex;
+    padding-top:20px ;
+   gap: 10px;
+   width: 100%;
+   justify-content: center;
+}
+.circle,.circle1{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: aqua;
+}
+.square,.square1,.square2{
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: rgb(104, 238, 146);
+    /* overflow: hidden; */
+}
+.button{
+    padding: 10px 100px 10px 100px;
+    border-radius: 10px;
+    font-size: 24px;
+    background: linear-gradient(lightseagreen,seagreen);
+    border:none;
+}
+.button:active{
+    scale: 0.96;
+}

@@ -43,6 +43,7 @@
 }
 
 .social-logo {
+    position:relative;
     width: 40px;
     height: 40px;
     border: 1px solid rgb(56, 54, 54);
@@ -53,11 +54,30 @@
      background: transparent;
     transition: all 0.3s ease;
     cursor: pointer;
+    overflow: hidden;
 }
-
+.logo-effect{
+   display: flex;
+    align-items: center;
+    gap: 2px;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+    position: relative;
+    transition: 0.3s;  
+}
+.logo-animation{
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    right: 0;
+    position: absolute;
+    width: 200%;
+    height: 100%;
+    transition: 0.3s;
+}
 .social-logos {
     display: flex;
-
     gap: 10px;
     padding: 20px 0px 20px 0px;
 }

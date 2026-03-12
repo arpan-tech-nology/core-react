@@ -9,11 +9,28 @@ export default function Profile() {
                         <p className="service-text">Portfolio</p>
 
                         <div className="portfolio-btns">
-                            <button className="portfolio-btn color">All</button>
-                            <button className="portfolio-btn">Website Design</button>
-                            <button className="portfolio-btn">App Mobile Design</button>
-                            <button className="portfolio-btn">App Desktop</button>
-                            <button className="portfolio-btn">Braiding</button>
+                            <button className="portfolio-btn color">
+                             <div className=" animation">
+                <span className="effect">All</span>
+                <span className="effect">All</span>
+            </div>
+                </button>
+                            <button className="portfolio-btn"> <div className=" animation">
+                <span className="effect">Website Design </span>
+                <span className="effect">Website Design </span>
+            </div></button>
+                            <button className="portfolio-btn"> <div className=" animation">
+                <span className="effect">App Mobile Design</span>
+                <span className="effect">App Mobile Design</span>
+            </div></button>
+                            <button className="portfolio-btn"><div className=" animation">
+                <span className="effect">App Desktop</span>
+                <span className="effect">App Desktop</span>
+            </div></button>
+                            <button className="portfolio-btn"> <div className=" animation">
+                <span className="effect">Braiding</span>
+                <span className="effect">Braiding</span>
+            </div></button>
                         </div>
                     </div>
                     <div className="portfolio-card-wrap">

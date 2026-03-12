@@ -2,6 +2,7 @@ import Header from "./Components/Header/header"
 import Profile from "./Components/ProfileSection/profile"
 import Parteners from "./Components/Parteners/Partener"
 import { Link } from "react-router-dom"
+import Motion from "./Components/Motion/Motion"
 // import {FormClass} from "./Components/Form/Form"
 import Form from "./Components/Form/Form"
 import { Incremental } from "./Components/ClassUsingIncrement/increment"
@@ -19,6 +20,7 @@ export default function Home(){
     <Form/>
     {/* <FormClass/> */}
     <Incremental/>
+    <Motion/>
     </>
   )
 }

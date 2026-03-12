@@ -1,38 +1,27 @@
 import "./Header.css"
 import { useEffect, useState } from "react"
-
-
 import { XCircle } from "lucide-react";
 import { PrimaryButton } from "../Projectbutton/Buttons"
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 export default function ProjectHeader() {
 
     const [showHeader, setShowHeader] = useState(false);
     const [sidebar, setSideBar] = useState(false);
     const [sectionActive ,setSectionActive]=useState("home");
     const [cursor, setCursorPos] = useState({ x: 0, y: 0 });
-
-
-
     useEffect(() => {
-
-
         window.addEventListener("scroll", () => {
             const currentScrollY = window.scrollY;
             if (currentScrollY == 0) {
                 setShowHeader(false)
             }
            
-
             if (currentScrollY > 900) {
-
                 setShowHeader(true);
-
-
             }
-
         }
         );
-
     }, []);
 
     useEffect(() => {
@@ -76,8 +65,13 @@ export default function ProjectHeader() {
     })
 
     },[])
-   
-
+    //  useGSAP(()=>{
+    //      gsap.from(".social-logo",{
+    //         rotate:360,
+    //         duration:2,
+    //         delay:2,
+    //      })   
+    //     })
 
     return (
         <>

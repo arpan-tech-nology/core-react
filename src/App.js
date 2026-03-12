@@ -4,6 +4,7 @@ import Home from "./Home"
 import Table from "./Components/Table/Table "
 import { TableData } from "./Components/Table/Table "
 import Project from "./Project"
+import Animation from "./Components/Animation/Animation"
 
 export default function App(){
    const items = [
@@ -28,6 +29,7 @@ export default function App(){
         <Route path="/table" element={<Table items={items}/>}></Route>
         <Route path="/table2" element={<TableData items={items}/>}></Route>
         <Route path="/project"element={<Project/>}></Route>
+        <Route path="/Animation" element={<Animation></Animation>}></Route>
          </Routes>
     </Router>
     </>

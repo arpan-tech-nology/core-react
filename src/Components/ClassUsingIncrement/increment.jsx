@@ -1,5 +1,6 @@
 "use client"
 import React from "react";
+
 class Incremental extends React.Component{
     constructor(props){
         super(props);
@@ -23,6 +24,7 @@ class Incremental extends React.Component{
             <h1>Counter</h1>
             <p>{counter}</p>
             <button onClick={this.handelCounter}>Click To Increment</button>
+            
             </>
         )
     }
